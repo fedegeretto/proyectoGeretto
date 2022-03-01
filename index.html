@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,500;0,900;1,500;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>CriptoNFTHoy</title>
 </head>
@@ -27,7 +28,7 @@
     </header>
 
     <main>
-        <section class="seccion-uno">
+        <section class="seccion-uno" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <div class="seccion-uno-texto">
                 <h1>Bienvenidos a CriptoNFTHoy</h1>
                 <p>El lugar indicado para aprender e informarse sobre Criptomonedas y NFT con las últimas noticias del día. Además encontrarás una gran variedad de cursos completamente GRATUITOS</p>
@@ -49,21 +50,21 @@
         <section class="seccion-tres">
             <h2 class="seccion-subtitulo">Mejores Juegos NFT</h2>
             <div class="contenedor-juegos">
-                <div class="juegos">
+                <div class="juegos" data-aos="zoom-in-down" data-aos-duration="2500">
                     <img class="imagen-juego" src="img/axie-infinity.png" alt="Logo de Axie infinity junto a sus Axies">
                     <div class="texto-juego">
                         <h3>Axie infinity</h3>
                             <p>Axie Infinity es un videojuego en línea basado en NFT desarrollado por el estudio vietnamita​ de Sky Mavis, que utiliza la criptomoneda basada en Ethereum AXS y SLP. Actualmente es la colección de NFT más cara con más de $ 42 millones en ventas en junio de 2021.</p>
                     </div>
                 </div>
-                <div class="juegos">
+                <div class="juegos" data-aos="zoom-in-down" data-aos-duration="2500">
                     <img class="imagen-juego" src="img/illuvium.png" alt="Presentación de Illuvium, juego NFT a mundo abierto">
                     <div class="texto-juego">
                         <h3>Illuvium</h3>
                             <p>Illuvium es un juego de colección de NFTs y auto battler descentralizado, construido en la red Ethereum. A juzgar por su aspecto, es un mashup entre Pokémon, RPGs de mundo abierto y juegos como el Auto Battler Teamfight Tactics de League of Legends.</p>
                     </div>
                 </div>
-                <div class="juegos">
+                <div class="juegos" data-aos="zoom-in-down" data-aos-duration="2500">
                     <img class="imagen-juego" src="img/mir4.png" alt="Logo de Mir4 junto a sus personajes">
                     <div class="texto-juego">
                         <h3>Mir4</h3>
@@ -75,7 +76,7 @@
 
         <section class="seccion-cuatro">   
             <div class="grilla-noticias">
-                <h2>Últimas Noticias</h2>
+                <h2 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Últimas Noticias</h2>
                 <article class="noticia-flex">
                     <img class="noticia-imagen" src="img/noticia1-inicio.jpg" alt="Criptomonedas para invertir">
                     <h3 class="noticia-titulo">Invertir en cripto en 2022: estas son las tres opciones que más podrían crecer</h3>
@@ -151,5 +152,9 @@
             <p>Copyright &#169 - CriptoNFTHoy</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body> 
 </html>

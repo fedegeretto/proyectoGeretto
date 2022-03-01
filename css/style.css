@@ -82,7 +82,9 @@
 /********* CSS SECCION DOS *********/
 
 .seccion-dos{
-    background-color: rgb(233, 233, 233);
+    /* background-color: rgb(233, 233, 233); */
+    background: rgb(233,233,233);
+    background: radial-gradient(circle, rgba(233,233,233,1) 75%, rgba(214,130,30,1) 92%);
     padding: 45px;
     color: rgb(0, 0, 0);
     border-top: 2px solid rgb(0, 0, 0);
@@ -104,6 +106,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.seccion-dos-imagenes img:hover{
+    transform: scale(1.5, 1.5);
+    transition: 2s;
 }
 
 /********* CSS SECCION TRES *********/
@@ -147,6 +154,8 @@
     background-color: rgb(233, 233, 233);
     color: rgb(0, 0, 0);
     padding: 45px;
+    background: rgb(233,233,233);
+    background: radial-gradient(circle, rgba(233,233,233,1) 75%, rgba(214,130,30,1) 92%);
 }
 
 .grilla-noticias{
