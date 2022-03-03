@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -161,7 +163,7 @@
 .grilla-noticias{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 900px 900px 100px;
+    grid-template-rows: 100px 1000px 1000px 100px;
     grid-template-areas: "titulo titulo titulo"
                          "noticia1 noticia2 noticia3"
                          "noticia4 noticia5 noticia6"
@@ -247,8 +249,8 @@
 }
 
 .footer-logo{
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 200px;
 }
 
 .footer-redes-sociales{
@@ -308,6 +310,7 @@
 .noticia-individual{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: rgb(233, 233, 233)
 }
 
@@ -518,7 +521,7 @@
 
 .label-form{
     border: 1px rgb(56, 56, 56) solid;
-    width: 300px;
+    max-width: 300px;
     height: 30px;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
@@ -579,7 +582,7 @@
     }
 
     .seccion-uno-texto h1{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .seccion-uno-texto p{
@@ -589,7 +592,7 @@
     /********* CSS SECCION DOS *********/
 
     .seccion-subtitulo{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .seccion-dos-imagenes{
@@ -724,10 +727,75 @@
 
 /***** CSS PARA PÁGINA DE NOSOTROS RESPONSIVE *****/
     .pagina-titulo{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .nosotros-individual h2{
         text-align: left;
     }
 }
+
+/* ==================== */
+
+#menu a{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#menu button{
+    font-size: 18px;
+    font-weight:600
+}
+
+#menu button:hover{
+    background-color: rgb(214, 130, 30);
+}
+
+#menu li a:hover{
+    color: rgb(214, 130, 30)
+}
+
+#politicas{
+    color: white;
+    min-height: 100px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+}
+
+#iconos{
+    font-size: 40px;
+    align-self: center;
+}
+
+.bi-facebook{
+    color: rgb(59, 89, 152);
+}
+
+.bi-instagram{
+    color: #833AB4;
+}
+
+.bi-youtube{
+    color: rgb(197, 48, 43);
+}
+
+.bi-youtube:hover{
+    color: rgb(255, 0, 0);
+}
+
+.bi-instagram:hover{
+    color: rgb(221, 221, 221);
+}
+
+.bi-facebook:hover{
+    color: rgb(11, 33, 238);
+}
+
+iframe{
+    width: 80%;
+    padding-bottom: 35px;
+}
+

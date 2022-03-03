@@ -9,23 +9,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,500;0,900;1,500;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>CriptoNFTHoy</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="../index.html"><img class="header-logo" src="../img/logo-cnh.jpeg" alt="Logo abreviado de CriptoNFTHoy"></a>
-        <nav class="heeader-nav">
-            <ul class="header-lista">
-                <li> <a href="../index.html">INICIO</a></li>
-                <li> <a href="noticias.html">NOTICIAS</a> </li>
-                <li> <a href="cursos.html">CURSOS</a> </li>
-                <li> <a href="nosotros.html">NOSOTROS</a> </li>
-                <li> <a href="contacto.html">CONTACTO</a> </li>
-            </ul>
-        </nav> 
+    
+    <header class="container-fluid bg-danger d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Todo el contenido de esta página tiene como objetivo INFORMAR</p>
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+              <img src="../img/logo-cnh-removebg-preview.png" alt="Logo abreviado de CriptoNFTHoy" class="header-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="noticias.html">NOTICIAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cursos.html">CURSOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-light btn-light-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
     <main>
         <div class="pagina-titulo">
@@ -40,136 +67,137 @@
                 <img src="../img/gateio.webp" alt="Usuarios de gate.io">
                 <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
                 <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/criptomonedas-duplicaron-precio-un-ano.webp" alt="Criptomonedas">
+                <h3>Estas criptomonedas del top han duplicado (o incluso más) su precio en un año</h3>
+                <p>El mercado de criptomonedas está caracterizado por varias cosas. Pero una de ellas, y quizá la que más atraiga a entusiastas a este mundo, es la cantidad de monedas con aumentos de precio vertiginosos, muy altos, en poco tiempo. En el último año, hay una lista de 30 monedas pertenecientes al top 100 del mercado que no solo han tenido...</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/BTC-Argentina.png.webp" alt="Bitcoin y Argentina">
+                <h3>¿Es rentable minar bitcoin y criptomonedas en Argentina en 2022?</h3>
+                <p>Minar criptomonedas como bitcoin (BTC) y ether (ETH) es una actividad que, en Argentina, tiene marcadas diferencias. La situación es muy distinta para quienes operan a nivel industrial y para quienes lo hacen desde sus hogares. Al final, si bien es cierto que la industria se mantiene y crece, la rentabilidad es altamente relativa. Para responder...</p>
+                <button name="leer mas">Leer más</button>
             </article>
 
             <div class="tipo-noticia-dos">
                 <h2>Noticia de Mejores Juegos NFT</h2>
             </div>
             <article class="noticia-individual noticia4">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/axies-1-1.png.webp" alt="Adolescente jugando Axie Infinity">
+                <h3>Axie Infinity filtra detalles sobre Origin, la nueva versión del videojuego basado en NFT</h3>
+                <p>Axie Infinity, el videojuego basado en NFT, se prepara para recibir pronto a Origin, el nombre con el que se ha presentado su nueva y mejorada versión. El día de ayer se publicó un nuevo comunicado en el blog oficial de Axie Infinity, que fue replicado en sus redes sociales. En él se detallan una serie de novedades que están cercanas a llegar al juego.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/AXIE-INFINITY-USERS-1140x570.png.webp" alt="Axie infinity">
+                <h3>Axie Infinity frena aumento de tarifas en su marketplace por quejas de la comunidad</h3>
+                <p>Sky Mavis, empresa detrás del popular videojuego Axie Infinity, ha decidido pausar el aumento a las tarifas de transacción en el mercado o Marketplace de Axie, que iban a pasar de 4,25% a 5,25% el próximo 7 de marzo. El freno a la nueva política del juego se puso debido a las múltiples quejas de la comunidad.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/youtube-incursionara-metaverso-nft-1140x570.jpg.webp" alt="YouTube y metaverso">
+                <h3>YouTube entrará en el mercado de NFT y juegos de metaversos</h3>
+                <p>YouTube entrará de lleno en el mercado de los NFT (tokens no fungibles), los juegos inmersivos de metaversos y otros productos de la industria de las criptomonedas. Así lo dio a conocer la empresa el 10 de febrero en un comunicado sobre los nuevos productos, herramientas y características que lanzarán en 2022.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <div class="tipo-noticia-tres">
                 <h2>Noticia de Finanzas Digitales</h2>
             </div>
             <article class="noticia-individual noticia7">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/nueva-tarjeta-mastercard-argentina-pagos-criptomonedas-1140x570.jpg.webp" alt="Tarjeta MasterCard y Bitcoin">
+                <h3>¿Querés pagar con bitcoin en Argentina? Ya está disponible una tarjeta de débito prepagada</h3>
+                <p>Los responsables de la billetera digital Belo anunciaron este lunes el lanzamiento en Argentina de las primeras 1.000 tarjetas de débito Belo Mastercard, para permitir pagos a partir de fondos disponibles en bitcoin y otras criptomonedas. La conversión a pesos argentinos se realiza de forma automática al realizar los pagos.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual noticia8">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/petro-economia-venezolana-1140x570.jpg.webp" alt="Petro y Venezuela">
+                <h3>¿El Petro se ganó un lugar en la economía venezolana?</h3>
+                <p>Desde el año 2017 la palabra «petro» es parte del imaginario colectivo venezolano y una pieza más de su sistema financiero. Para aquel entonces, el gobierno de Venezuela presentaba la criptomoneda nacional como la solución para la maltrecha economía del país que sufría por la devaluación del bolívar, la hiperinflación, las tensiones políticas-comerciales internas y las sanciones internacionales.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual noticia9">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/el-salvador-negativa-1140x570.png.webp" alt="El salvador y el mercado crediticio">
+                <h3>Adopción de bitcoin en El Salvador baja su calificación crediticia</h3>
+                <p>Nuevamente, la adopción de bitcoin (BTC) como moneda de curso legal en El Salvador, enciende las alarmas de las entidades financieras internacionales. La calificadora de riesgos estadounidense, Fitch Ratings, bajó la calificación crediticia a largo plazo, conocida como Issuer Default Rating (IDR).</p>
+                <button name="leer mas">Leer más</button>
             </article>
 
             <div class="tipo-noticia-cuatro">
                 <h2>Noticia de Economía y Política</h2>
             </div>
             <article class="noticia-individual noticia10">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/recesion-mexico-1140x570.jpg.webp" alt="Mercados de México">
+                <h3>México cae en recesión: economía de Estado y bitcoin mantienen tendencias distintas</h3>
+                <p>El año de la recuperación económica de México se estancó. La caída de 0,1% de la economía durante los últimos tres meses de 2021, respecto al periodo anterior, representa un revés que coloca al país entre los más rezagados del continente. De acuerdo con datos preliminares del Instituto Nacional de Estadística y Geografía (Inegi) difundidos este lunes, esta caída del Producto Interno Bruto se podría sumar al traspié que se registró en el tercer trimestre de 0,4%.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual noticia11">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/bitcoin-3585354_1920-1140x570.jpg" alt="Bitcoin en una mano">
+                <h3>El dólar bitcoin resuena cada vez más fuerte en la maltrecha economía de Argentina</h3>
+                <p>El peso argentino aceleró aún más su acentuado ritmo de depreciación. Los ciudadanos del país sudamericano vienen librando una fuerte batalla con la inestabilidad de la economía y el cepo cambiario que condiciona la compra de dólares norteamericanos. El gobierno lanzó un millonario paquete de medidas con la idea de enfrentar las consecuencias económicas frente a la pandemia por coronavirus, y en este contexto, el apetito por la dolarización en medio de la incertidumbre, el exceso de pesos y la fuerte caída de las tasas, provocó que se disparan los tipos de cambio implícitos del dólar; entre los cuales el «dólar bitcoin» resuena cada vez con mayor fuerza.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual noticia12">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/jerome-powell-impresion-dolares-estados-unidos-1140x570.jpg.webp" alt="Jerome Powell y dólares">
+                <h3>Con Jerome «BRRR» Powell se ratifica la impresión como política monetaria en EE. UU.</h3>
+                <p>Una simple acción dice mucho más que miles de palabras. Ocurre en todas las instancias de la vida. Y la política es una de las que más deja entrever intenciones en cada movimiento que dan sus actores. La ratificación de Jerome Powell al frente de la Reserva Federal (Fed) de Estados Unidos es una de las más recientes de Joe Biden, actual presidente del país norteamericano.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             
             <div class="tipo-noticia-cinco">
                 <h2>Noticias más leídas</h2>
             </div>
             <article class="noticia-individual">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/ucrania-airdrops-btc-1140x570.png.webp" alt="Mujer y Bitcoin">
+                <h3>Ucrania se convierte en el primer Estado en organizar un airdrop de criptomonedas</h3>
+                <p>Luego de recibir donaciones por un monto cercano a los USD 37 millones en Bitcoin y otras criptomonedas, el gobierno de Ucrania decidió recompensar a quienes se han solidarizado con su causa. Para tal fin, anunció una campaña de distribución gratuita de tokens, conocida en el sector de las criptomonedas como airdrop.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/guerra-btc-1140x570.png.webp" alt="La guerra no la financia el bitcoin">
+                <h3>La guerra la financian los bancos y los gobiernos, no Bitcoin</h3>
+                <p>Hace poco más de dos meses, casi 60 premios Nobel hicieron una petición para disminuir el gasto militar en todo el mundo. Al reducir solo 2%, se podría ahorrar USD 40.000 millones anuales, una cifra que podría contribuir a mitigar el hambre de 811 millones de personas en el mundo. El problema es que el financiamiento de la guerra es un negocio muy lucrativo para sectores de la sociedad que rara vez deben enfrentarse a las consecuencias de la destrucción.</p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/prohibicion-btc-1140x570.png.webp" alt="Prohibición de BTC">
+                <h3>¡Y qué hacemos si los gobiernos deciden prohibir bitcoin!</h3>
+                <p>La empresa Casa, dedicada a desarrollar software de seguridad de Bitcoin, organizó hace unos días un panel de discusión. Allí se debatió sobre las posibilidades reales de que los países prohíban criptomonedas como bitcoin (BTC), y las opciones que tienen los ciudadanos ante un escenario semejante. En el debate, que se desarrolló en vivo en un space de Twitter, participó Jameson Lopp, CTO de la firma, junto a Ron Stoner, jefe de Seguridad de la misma. También estuvieron presentes el bitcoiner canadiense identificado en Twitter como @NVK; y Dave Bradley, fundador de Bitcoin Brains.  </p>
+                <button name="leer mas">Leer más</button>
             </article>
             <article class="noticia-individual">
-                <img src="../img/gateio.webp" alt="Usuarios de gate.io">
-                <h3>Gate.io supera los 10 millones de usuarios y entra al top de los exchanges globales</h3>
-                <p>El principal exchange de criptomonedas, Gate.io, anunció que su total de usuarios registrados había superado la marca de los 10 millones. Esto culmina un increíble 2021 para la compañía, donde Forbes la seleccionó como el mejor exchange del mundo. Las dos razones principales por las que Gate.io ha atraído a tantos usuarios son: su historial de seguridad y la gran cantidad de productos que ofrecen.</p>
-                <button name="leer mas"> Leer más </button>
+                <img src="../img/ucrania-hacker-1140x570.png.webp" alt="Hacker">
+                <h3>El otro frente de la guerra: hackers atacan al gobierno de Ucrania</h3>
+                <p>Una guerra se está librando en las calles de Kiev y en otras partes de Ucrania, pero también se está luchando una guerra silenciosa aunque igual de dañina: la guerra cibernética. El pasado miércoles se reportaron varios ataques cibernéticos a instituciones del gobierno de Ucrania, así como a medios de comunicación y páginas web. Rusia tampoco estuvo libre de recibir ataques cibernéticos desde que inició la invasión a Ucrania.</p>
+                <button name="leer mas">Leer más</button>
             </article>
         </div>
     </main>
 
-
-    <footer class="footer">
-        <div class="footer-uno">
-            <img class="footer-logo" src="../img/logo-cnh.jpeg" alt="Logo abreviado de CriptoNFTHoy">
-            <div>
-                <p class="footer-texto">Redes Sociales</p>
-                <a href="https://es-la.facebook.com/" target="_blank"><img class="footer-redes-sociales" src="../img/icono-facebook.png" alt="Icono de Facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="footer-redes-sociales" src="../img/icono-instagram.png" alt="Icono de Instagram"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img class="footer-redes-sociales" src="../img/icono-youtube.png" alt="Icono de YouTube"></a>
+    <footer class="d-flex flex-column w-100">
+        <div class="w-100 d-flex flex-wrap align-items justify-content-evenly">
+            <img class="footer-logo" src="../img/logo-cnh-removebg-preview.png" alt="Logo abreviado de CriptoNFTHoy">
+            <div id="iconos">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
             </div>
-            <div class="footer-texto">      
+            <div class="fs-4 px-3 pt-3" id="politicas">      
                 <p>Aviso Legal</p>
                 <p>Política de Privacidad</p>
                 <p>Política de Cookies</p>
             </div>
         </div>
-        <div class="footer-dos">
-            <p>Copyright &#169 - CriptoNFTHoy</p>
+
+        <div class="bg-secondary text-center pt-3 text-white">
+            <p >Copyright &#169 - CriptoNFTHoy</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

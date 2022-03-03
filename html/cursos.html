@@ -9,94 +9,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,500;0,900;1,500;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>CriptoNFTHoy</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="../index.html"><img class="header-logo" src="../img/logo-cnh.jpeg" alt="Logo abreviado de CriptoNFTHoy"></a>
-        <nav class="heeader-nav">
-            <ul class="header-lista">
-                <li> <a href="../index.html">INICIO</a></li>
-                <li> <a href="noticias.html">NOTICIAS</a> </li>
-                <li> <a href="cursos.html">CURSOS</a> </li>
-                <li> <a href="nosotros.html">NOSOTROS</a> </li>
-                <li> <a href="contacto.html">CONTACTO</a> </li>
-            </ul>
-        </nav> 
+
+    <header class="container-fluid bg-danger d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Todo el contenido de esta página tiene como objetivo INFORMAR</p>
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+              <img src="../img/logo-cnh-removebg-preview.png" alt="Logo abreviado de CriptoNFTHoy" class="header-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="noticias.html">NOTICIAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cursos.html">CURSOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-light btn-light-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
     <main>
         <div class="pagina-titulo">
             <h1 data-aos="zoom-in" data-aos-duration="2500">Cursos de Criptomonedas y NFT</h1>
         </div>
 
-        <section class="contenedor-cursos">
-            <div class="grilla-cursos">
-                <article class="curso-flex">
-                    <h2>Curso de Trading de criptomonedas GRATIS </h2>
+        <section class="contenedor-cursos"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 curso d-flex justify-content-evenly flex-column align-items-center">
+                    <h2 class="text-center">Curso de Trading de criptomonedas GRATIS </h2>
                     <h3>De cero a experto</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/YRx_favAfWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-                <article class="curso-flex">
-                    <h2>Curso Gratis de NFT para principiantes</h2>
+                </div>
+
+                <div class="col-sm-12 col-md-6 curso d-flex justify-content-evenly flex-column align-items-center">
+                    <h2 class="text-center">Curso Gratis de NFT para principiantes</h2>
                     <h3>Gana tu primer NFT</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/OxJsrduymAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-                <article class="curso-flex">
-                    <h2>Todo sobre Binance</h2>
+                </div>    
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 curso d-flex justify-content-evenly flex-column align-items-center">
+                    <h2 class="text-center">Todo sobre Binance</h2>
                     <h3>La mejor Masterclass en español</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/l24ITkr5LBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-                <article class="curso-flex">
-                    <h2>Curso de Análisis Ténico</h2>
+                </div>
+                <div class="col-sm-12 col-md-6 curso d-flex justify-content-evenly flex-column align-items-center">
+                    <h2 class="text-center">Curso de Análisis Ténico</h2>
                     <h3>Todo desde cero y GRATIS</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/W6nb-i82W5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-                <article class="curso-flex">
-                    <h2>Guía de AXIE INFINITY</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 curso d-flex justify-content-evenly flex-column align-items-center">
+                    <h2 class="text-center">Guía de AXIE INFINITY</h2>
                     <h3>Cómo Jugar DESDE CERO</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/10QeE8RFM8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-                <article class="curso-flex">
-                    <h2>Análisis Técnico y Fundamental de Criptomonedas</h2>
+                </div>
+                <div class="col-sm-12 col-md-6 curso d-flex justify-content-evenly flex-column align-items-center">
+                    <h2 class="text-center">Análisis Técnico y Fundamental de Criptomonedas</h2>
                     <h3>Taller básico junto al exchange PrimeXBT</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/pOqFmX2zM_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article> 
-                <article class="curso-flex">
-                <h2>Cómo GANAR más de 100 dólares mensuales</h2>
-                <h3>¡Solo por ser humano!</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vQnhW48_r6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-                <article class="curso-flex">
-                <h2>Blockchain y su aplicación en el ámbito financiero</h2>
-                <h3>Detalles de cómo surgió bitcoin y qué es la blockchain</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lkO168P39Z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
+                </div>
             </div>
+        </div>
         </section>
+
     </main>
 
-    <footer class="footer">
-        <div class="footer-uno">
-            <img class="footer-logo" src="../img/logo-cnh.jpeg" alt="Logo abreviado de CriptoNFTHoy">
-            <div>
-                <p class="footer-texto">Redes Sociales</p>
-                <a href="https://es-la.facebook.com/" target="_blank"><img class="footer-redes-sociales" src="../img/icono-facebook.png" alt="Icono de Facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="footer-redes-sociales" src="../img/icono-instagram.png" alt="Icono de Instagram"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img class="footer-redes-sociales" src="../img/icono-youtube.png" alt="Icono de YouTube"></a>
+    <footer class="d-flex flex-column w-100">
+        <div class="w-100 d-flex flex-wrap align-items justify-content-evenly">
+            <img class="footer-logo" src="../img/logo-cnh-removebg-preview.png" alt="Logo abreviado de CriptoNFTHoy">
+            <div id="iconos">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
             </div>
-            <div class="footer-texto">      
+            <div class="fs-4 px-3 pt-3" id="politicas">      
                 <p>Aviso Legal</p>
                 <p>Política de Privacidad</p>
                 <p>Política de Cookies</p>
             </div>
         </div>
-        <div class="footer-dos">
-            <p>Copyright &#169 - CriptoNFTHoy</p>
+
+        <div class="bg-secondary text-center pt-3 text-white">
+            <p >Copyright &#169 - CriptoNFTHoy</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
