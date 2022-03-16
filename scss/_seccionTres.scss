@@ -1,0 +1,67 @@
+/********* CSS SECCION TRES *********/
+
+.seccion-tres{
+    background-color: rgb(14, 14, 14);
+    color: rgb(255, 255, 255);
+    padding: 45px;
+
+    .contenedor-juegos{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .juegos{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+
+            h3{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 30px;
+                font-weight: 800;
+                padding: 10px 0;
+            }
+
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 25px;
+                font-weight: 500;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+// .seccion-tres{
+//     background-color: rgb(14, 14, 14);
+//     color: rgb(255, 255, 255);
+//     padding: 45px;
+// }
+
+// .contenedor-juegos{
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+// }
+
+// .juegos{
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     gap: 20px;
+// }
+
+// .texto-juego h3{
+//     font-family: Verdana, Geneva, Tahoma, sans-serif;
+//     font-size: 30px;
+//     font-weight: 800;
+//     padding: 10px 0;
+// }
+
+// .texto-juego p{
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 25px;
+//     font-weight: 500;
+//     line-height: 1.5;
+// }

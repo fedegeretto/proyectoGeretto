@@ -1,819 +1,583 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/******************* CSS PARA PÁGINA DE INICIO *******************/
-
 /********* CSS HEADER *********/
+.header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+  border-bottom: 4px solid #d6821e; }
 
-.header{
-    background-color: rgb(0, 0, 0);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 70px;
-    border-bottom: 4px solid rgb(214, 130, 30);
-}
+.header-logo {
+  width: 190px;
+  height: auto; }
 
-.header-logo{
-    width: 190px;
-    height: auto;
-}
+.header-lista {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  justify-content: space-around; }
 
-.header-lista{
-    display: flex;
-    flex-direction: row;
-    width: 600px;
-    justify-content: space-around;
-}
+.header-lista li {
+  list-style-type: none; }
 
-.header-lista li{
-    list-style-type: none;
-}
+.header-lista li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-.header-lista li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.header-lista li a:hover{
-    color: rgb(214, 130, 30);
-}
+.header-lista li a:hover {
+  color: #d6821e; }
 
 /********* CSS SECCION UNO *********/
+.seccion-uno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 70px; }
 
-.seccion-uno{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 70px;
-}
+.ilus {
+  width: 400px; }
 
-.ilus{
-    width: 400px;
-}
+.seccion-uno-texto {
+  text-align: left; }
 
-.seccion-uno-texto{
-    text-align: left;
-}
+.seccion-uno-texto h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  padding-bottom: 30px; }
 
-.seccion-uno-texto h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 60px;
-    font-weight: 900;
-    padding-bottom: 30px;
-}
-
-.seccion-uno-texto p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-}
+.seccion-uno-texto p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  font-weight: 500; }
 
 /********* CSS SECCION DOS *********/
+.seccion-dos {
+  /* background-color: rgb(233, 233, 233); */
+  background: #e9e9e9;
+  background: radial-gradient(circle, #e9e9e9 75%, #d6821e 92%);
+  padding: 45px;
+  color: black;
+  border-top: 2px solid black; }
 
-.seccion-dos{
-    /* background-color: rgb(233, 233, 233); */
-    background: rgb(233,233,233);
-    background: radial-gradient(circle, rgba(233,233,233,1) 75%, rgba(214,130,30,1) 92%);
-    padding: 45px;
-    color: rgb(0, 0, 0);
-    border-top: 2px solid rgb(0, 0, 0);
-}
+.seccion-subtitulo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 20px; }
 
-.seccion-subtitulo{
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 900;
-    text-align: center;
-    padding-bottom: 20px;
-}
+.seccion-dos-imagenes img {
+  width: 200px; }
 
-.seccion-dos-imagenes img{
-    width: 200px;
-}
+.seccion-dos-imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
-.seccion-dos-imagenes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.seccion-dos-imagenes img:hover{
-    transform: scale(1.5, 1.5);
-    transition: 2s;
-}
+.seccion-dos-imagenes img:hover {
+  transform: scale(1.5, 1.5);
+  transition: 2s; }
 
 /********* CSS SECCION TRES *********/
-
-.seccion-tres{
-    background-color: rgb(14, 14, 14);
-    color: rgb(255, 255, 255);
-    padding: 45px;
-}
-
-.contenedor-juegos{
+.seccion-tres {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 45px; }
+  .seccion-tres .contenedor-juegos {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-.juegos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-
-.texto-juego h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    font-weight: 800;
-    padding: 10px 0;
-}
-
-.texto-juego p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 1.5;
-}
+    gap: 20px; }
+    .seccion-tres .contenedor-juegos .juegos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px; }
+      .seccion-tres .contenedor-juegos .juegos h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+        padding: 10px 0; }
+      .seccion-tres .contenedor-juegos .juegos p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.5; }
 
 /********* CSS SECCION CUATRO *********/
-
-.seccion-cuatro{
-    background-color: rgb(233, 233, 233);
-    color: rgb(0, 0, 0);
-    padding: 45px;
-    background: rgb(233,233,233);
-    background: radial-gradient(circle, rgba(233,233,233,1) 75%, rgba(214,130,30,1) 92%);
-}
-
-.grilla-noticias{
+.seccion-cuatro {
+  background-color: #e9e9e9;
+  color: black;
+  padding: 45px;
+  background: #e9e9e9;
+  background: radial-gradient(circle, #e9e9e9 75%, #d6821e 92%); }
+  .seccion-cuatro .grilla-noticias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 1000px 1000px 100px;
-    grid-template-areas: "titulo titulo titulo"
-                         "noticia1 noticia2 noticia3"
-                         "noticia4 noticia5 noticia6"
-                         ". boton .";
+    grid-template-areas: "titulo titulo titulo" "noticia1 noticia2 noticia3" "noticia4 noticia5 noticia6" ". boton .";
     column-gap: 10px;
-    row-gap: 10px;
-}
-
-.grilla-noticias h2{
-    grid-area: titulo;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 900;
-    padding-bottom: 20px;
-    text-align: center;
-    align-self: center;
-}
-
-.noticia-flex{
-    background-color: rgb(255, 255, 255);
-    border: 2px rgb(0, 0, 0) solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.noticia-imagen{
-    width: 100%;
-}
-
-.noticia-titulo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    font-weight: 800;
-    padding: 10px;
-}
-
-.noticia-parrafo{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 10px;
-}
-
-.noticia-boton{
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: none;
-    width: 100%;  
-}
-
-.boton-tn{
-    background-color: rgb(214, 130, 30);
-    border: 2px solid rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    grid-area: boton;
-    padding: 10px;
-    align-self: center;
-}
+    row-gap: 10px; }
+    .seccion-cuatro .grilla-noticias h2 {
+      grid-area: titulo;
+      font-family: 'Roboto', sans-serif;
+      font-size: 50px;
+      font-weight: 900;
+      padding-bottom: 20px;
+      text-align: center;
+      align-self: center; }
+    .seccion-cuatro .grilla-noticias .noticia-flex {
+      background-color: white;
+      border: 2px black solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .seccion-cuatro .grilla-noticias .noticia-flex .noticia-imagen {
+        width: 100%; }
+      .seccion-cuatro .grilla-noticias .noticia-flex .noticia-titulo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        font-weight: 800;
+        padding: 10px; }
+      .seccion-cuatro .grilla-noticias .noticia-flex .noticia-parrafo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 10px; }
+      .seccion-cuatro .grilla-noticias .noticia-flex .noticia-boton {
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        width: 100%; }
+    .seccion-cuatro .grilla-noticias .boton-tn {
+      background-color: #d6821e;
+      border: 2px solid black;
+      color: white;
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      grid-area: boton;
+      padding: 10px;
+      align-self: center; }
 
 /********* CSS FOOTER *********/
+.footer {
+  display: flex;
+  flex-direction: column; }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-}
+.footer-uno {
+  height: 200px;
+  padding: 10px 45px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white; }
 
-.footer-uno{
-    height: 200px;
-    padding: 10px 45px;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(255, 255, 255);
-}
+.footer-logo {
+  width: auto;
+  height: 200px; }
 
-.footer-logo{
-    width: auto;
-    height: 200px;
-}
+.footer-redes-sociales {
+  width: 45px;
+  height: auto;
+  padding: 5px; }
 
-.footer-redes-sociales{
-    width: 45px;
-    height: auto;
-    padding: 5px;
-}
+.footer-texto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  padding-bottom: 10px; }
 
-.footer-texto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    padding-bottom: 10px;
-}
+.footer-dos {
+  background-color: #dddddd;
+  color: #111111;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+  text-align: center; }
 
-.footer-dos{
-    background-color: rgb(221, 221, 221);
-    color: rgb(17, 17, 17);
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px;
-    text-align: center;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+/******************* CSS PARA PÁGINA DE INICIO *******************/
 /******************* CSS PARA PÁGINA DE NOTICIAS *******************/
+.grilla-pagina-noticias {
+  padding: 30px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 100px, repeat(2, 300px) 100px, repeat(2, 300px) 100px, repeat(3, 300px) 100px, repeat(3, 300px);
+  grid-template-areas: "titulo1 titulo1" "noticia1 noticia1" "noticia2 noticia3" "titulo2 titulo2" "noticia4 noticia4" "noticia5 noticia6" "titulo3 titulo4" "noticia7 noticia10" "noticia8 noticia11" "noticia9 noticia12" "titulo5 titulo5" "noticia13 noticia14" "noticia15 noticia16";
+  column-gap: 15px;
+  row-gap: 15px; }
 
-.grilla-pagina-noticias{
-    padding: 30px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 100px, repeat(2, 300px) 100px, repeat(2, 300px) 100px, repeat(3, 300px) 100px, repeat(3, 300px);
-    grid-template-areas: "titulo1 titulo1"
-                         "noticia1 noticia1"
-                         "noticia2 noticia3"
-                         "titulo2 titulo2"
-                         "noticia4 noticia4"
-                         "noticia5 noticia6"
-                         "titulo3 titulo4"
-                         "noticia7 noticia10"
-                         "noticia8 noticia11"
-                         "noticia9 noticia12"
-                         "titulo5 titulo5"
-                         "noticia13 noticia14"
-                         "noticia15 noticia16";  
-    column-gap: 15px;
-    row-gap: 15px;                  
-}
+.tipo-noticia-uno {
+  grid-area: titulo1;
+  font-size: 25px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 0px; }
 
-.tipo-noticia-uno{
-    grid-area: titulo1;
-    font-size: 25px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 0px;
-}
+.noticia-individual {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e9e9e9; }
 
-.noticia-individual{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(233, 233, 233)
-}
+.noticia-individual h3 {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  padding: 10px; }
 
-.noticia-individual h3{
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    padding: 10px;
-}
+.noticia-individual p {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  line-height: 1.4; }
 
-.noticia-individual p{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 10px;
-    line-height: 1.4;
-}
+.noticia-individual button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #d6821e;
+  border: 2px solid black; }
 
-.noticia-individual button{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 10px;
-    padding: 5px;
-    background-color: rgb(214, 130, 30);
-    border: 2px solid rgb(0, 0, 0);
-}
+.noticia1 {
+  grid-area: noticia1; }
 
-.noticia1{
-    grid-area: noticia1;
-}
+.tipo-noticia-dos {
+  grid-area: titulo2;
+  font-size: 25px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 0px; }
 
-.tipo-noticia-dos{
-    grid-area: titulo2;
-    font-size: 25px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 0px;
-}
+.noticia4 {
+  grid-area: noticia4; }
 
-.noticia4{
-    grid-area: noticia4;
-}
+.tipo-noticia-tres {
+  grid-area: titulo3;
+  font-size: 25px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 0px; }
 
-.tipo-noticia-tres{
-    grid-area: titulo3;
-    font-size: 25px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 0px;
-}
+.tipo-noticia-cuatro {
+  grid-area: titulo4;
+  font-size: 25px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 0px; }
 
-.tipo-noticia-cuatro{
-    grid-area: titulo4;
-    font-size: 25px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 0px;
-}
+.noticia7 {
+  grid-area: noticia7; }
 
-.noticia7{
-    grid-area: noticia7;
-}
+.noticia8 {
+  grid-area: noticia8; }
 
-.noticia8{
-    grid-area: noticia8;
-}
+.noticia9 {
+  grid-area: noticia9; }
 
-.noticia9{
-    grid-area: noticia9;
-}
+.noticia10 {
+  grid-area: noticia10; }
 
-.noticia10{
-    grid-area: noticia10;
-}
+.noticia11 {
+  grid-area: noticia11; }
 
-.noticia11{
-    grid-area: noticia11;
-}
+.noticia12 {
+  grid-area: noticia12; }
 
-.noticia12{
-    grid-area: noticia12;
-}
-
-.tipo-noticia-cinco{
-    grid-area: titulo5;
-    font-size: 25px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 0px;
-}
+.tipo-noticia-cinco {
+  grid-area: titulo5;
+  font-size: 25px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 0px; }
 
 /******************* CSS PARA PÁGINA DE CURSOS *******************/
+.contenedor-cursos {
+  background-color: #e9e9e9;
+  color: black;
+  padding: 45px; }
 
-.contenedor-cursos{
-    background-color: rgb(233, 233, 233);
-    color: rgb(0, 0, 0);
-    padding: 45px;
-}
+.grilla-cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "curso1 curso2" "curso3 curso4" "curso5 curso6" "curso7 curso8";
+  column-gap: 50px;
+  row-gap: 50px; }
 
-.grilla-cursos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "curso1 curso2"
-                         "curso3 curso4"
-                         "curso5 curso6"
-                         "curso7 curso8";
-    column-gap: 50px;
-    row-gap: 50px;
-}
+.curso-flex {
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; }
 
-.curso-flex{
-    display: flex;
-    flex-direction: column;
-    border: 2px rgb(0, 0, 0) solid;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-}
+.curso-flex h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  text-align: center; }
 
-.curso-flex h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    text-align: center;
-}
+.curso-flex h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center; }
 
-.curso-flex h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.curso-flex iframe{
-    width: 100%;
-}
+.curso-flex iframe {
+  width: 100%; }
 
 /******************* CSS PARA PÁGINA DE NOSOTROS *******************/
+.pagina-titulo {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 2px black solid; }
 
-.pagina-titulo{
-    padding: 20px;
-    text-align: center;
-    font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-bottom: 2px rgb(0, 0, 0) solid;
-    
-}
+.nosotros-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  background-color: #e9e9e9; }
 
-.nosotros-flex{
-    display: flex;
-    flex-direction: column;
-    padding: 45px;
-    background-color: rgb(233, 233, 233);
-}
+.nosotros-individual {
+  padding: 10px; }
 
-.nosotros-individual{
-    padding: 10px;
-}
+.nosotros-individual h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 10px; }
 
-.nosotros-individual h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 10px;
-}
+.nosotros-individual p {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5; }
 
-.nosotros-individual p{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;
-}
+.nosotros-individual ul {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  list-style-type: circle;
+  line-height: 1.5; }
 
-.nosotros-individual ul{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    list-style-type: circle;
-    line-height: 1.5;
-}
-
-.nosotros-individual a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
+.nosotros-individual a {
+  text-decoration: none;
+  color: black; }
 
 /******************* CSS PARA PÁGINA DE CONTACTO *******************/
+.formulario-contacto {
+  display: flex;
+  flex-direction: column; }
 
-.formulario-contacto{
-    display: flex;
-    flex-direction: column;
-}
+.contiene-input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
 
-.contiene-input{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
+.datos-formulario {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 4px; }
 
-.datos-formulario{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 4px;
-}
+.label-form {
+  border: 1px #383838 solid;
+  max-width: 300px;
+  height: 30px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 4px; }
 
-.label-form{
-    border: 1px rgb(56, 56, 56) solid;
-    max-width: 300px;
-    height: 30px;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    padding: 4px;
-}
+::placeholder {
+  color: #191919; }
 
-::placeholder{
-    color: rgb(25, 25, 25);
-}
+.ingrese-mensaje {
+  border: 1px #383838 solid;
+  padding: 4px; }
 
-.ingrese-mensaje{
-    border: 1px rgb(56, 56, 56) solid;
-    padding: 4px;
-}
+#mensaje {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif; }
 
-#mensaje{
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.boton-enviar{
-    font-size: 20px;
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(214, 130, 30)
-}
-
+.boton-enviar {
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: black;
+  border: 2px solid #d6821e; }
 
 /******************* CSS PARA PÁGINA WEB RESPONSIVE *******************/
-
-
 /***** CSS PARA PÁGINA DE INICIO RESPONSIVE *****/
-
-@media only screen and (max-width:600px){
-
-
-    /********* CSS HEADER *********/
-    .header{
-        flex-direction: column;
-    }
-
-    .header-lista{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /********* CSS SECCION UNO *********/
-
-    .seccion-uno{
-        flex-direction: column-reverse;
-    }
-
-    .ilus{
-        width: 250px;
-    }
-
-    .seccion-uno-texto h1{
-        font-size: 40px;
-    }
-
-    .seccion-uno-texto p{
-        font-size: 20px;
-    }
-
-    /********* CSS SECCION DOS *********/
-
-    .seccion-subtitulo{
-        font-size: 35px;
-    }
-
-    .seccion-dos-imagenes{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /********* CSS SECCION TRES *********/
-
-    .juegos{
-        flex-direction: column;
-    }
-
-    .imagen-juego{
-        width: 100%;
-    }
-
-    .texto-juego p{
-        font-size: 18px;
-    }
-
-    /********* CSS SECCION CUATRO *********/
-
-    .grilla-noticias{
-        grid-template-columns: 100%;
-        grid-template-rows: 100px repeat(6, 1fr) 100px;
-        grid-template-areas: "titulo"
-                             "noticia1"
-                             "noticia2"
-                             "noticia3"
-                             "noticia4"
-                             "noticia5"
-                             "noticia6"
-                             "boton";
-    }
-
-    .noticia-flex{
-        border: none;
-    }
-
-    .noticia-imagen{
-        border: 2px solid rgb(0, 0, 0);
-    }
-
-    .noticia-titulo{
-        font-size: 20px;
-    }
-
-    .noticia-parrafo{
-        font-size: 15px;
-    }
-
-    /********* CSS FOOTER *********/
-
-    .footer-uno{
-        flex-direction: column;
-        width: 100%;
-        height: 350px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .footer-texto{
-        font-size: 15px;
-    }
-
-/***** CSS PARA PÁGINA DE NOTICIAS RESPONSIVE *****/
-
-    .grilla-pagina-noticias{
+@media only screen and (max-width: 600px) {
+  /********* CSS HEADER *********/
+  .header {
+    flex-direction: column; }
+  .header-lista {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; }
+  /********* CSS SECCION UNO *********/
+  .seccion-uno {
+    flex-direction: column-reverse; }
+  .ilus {
+    width: 250px; }
+  .seccion-uno-texto h1 {
+    font-size: 35px; }
+  .seccion-uno-texto p {
+    font-size: 20px; }
+  /********* CSS SECCION DOS *********/
+  .seccion-subtitulo {
+    font-size: 35px; }
+  .seccion-dos-imagenes {
+    flex-direction: column;
+    align-items: center; }
+  /********* CSS SECCION TRES *********/
+  .juegos {
+    flex-direction: column; }
+  .imagen-juego {
+    width: 100%; }
+  .texto-juego p {
+    font-size: 18px; }
+  /********* CSS SECCION CUATRO *********/
+  .grilla-noticias {
+    grid-template-columns: 100%;
+    grid-template-rows: 100px repeat(6, 1fr) 100px;
+    grid-template-areas: "titulo" "noticia1" "noticia2" "noticia3" "noticia4" "noticia5" "noticia6" "boton"; }
+  .noticia-flex {
+    border: none; }
+  .noticia-imagen {
+    border: 2px solid black; }
+  .noticia-titulo {
+    font-size: 20px; }
+  .noticia-parrafo {
+    font-size: 15px; }
+  /********* CSS FOOTER *********/
+  .footer-uno {
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    justify-content: space-between;
+    align-items: center; }
+  .footer-texto {
+    font-size: 15px; }
+  /***** CSS PARA PÁGINA DE NOTICIAS RESPONSIVE *****/
+  .grilla-pagina-noticias {
     grid-template-columns: 90%;
     grid-template-rows: 100px repeat(3, 1fr) 100px repeat(3, 1fr) 100px repeat(3, 1fr) 100px repeat(3, 1fr) 100px repeat(3, 1fr);
-    grid-template-areas: "titulo1"
-                         "noticia1"
-                         "noticia2"
-                         "noticia3"
-                         "titulo2"
-                         "noticia4"
-                         "noticia5"
-                         "noticia6"
-                         "titulo3"
-                         "noticia7"
-                         "noticia8"
-                         "noticia9"
-                         "titulo4"
-                         "noticia10"
-                         "noticia11"
-                         "noticia12"
-                         "titulo5"
-                         "noticia13"
-                         "noticia14"
-                         "noticia15";
-    }
-
-    .tipo-noticia-uno, .tipo-noticia-dos, .tipo-noticia-tres, .tipo-noticia-cuatro, .tipo-noticia-cinco{
-        font-size: 16px;
-    }
-
-    .noticia-individual h3{
-        font-size: 20px;
-    }
-
-    .noticia-individual p{
-        font-size: 18px;
-    }
-
-/***** CSS PARA PÁGINA DE CURSOS RESPONSIVE *****/
-
-    .grilla-cursos{
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: "curso1"
-                             "curso2"
-                             "curso3"
-                             "curso4"
-                             "curso5"
-                             "curso6"
-                             "curso7"
-                             "curso8";
-    }
-
-    .curso-flex h2{
-        font-size: 18px;
-    }
-
-    .curso-flex h3{
-        font-size: 16px;
-    }
-
-    .curso-flex iframe{
-        height: auto;        
-    }
-
-/***** CSS PARA PÁGINA DE NOSOTROS RESPONSIVE *****/
-    .pagina-titulo{
-        font-size: 17px;
-    }
-
-    .nosotros-individual h2{
-        text-align: left;
-    }
-}
+    grid-template-areas: "titulo1" "noticia1" "noticia2" "noticia3" "titulo2" "noticia4" "noticia5" "noticia6" "titulo3" "noticia7" "noticia8" "noticia9" "titulo4" "noticia10" "noticia11" "noticia12" "titulo5" "noticia13" "noticia14" "noticia15"; }
+  .tipo-noticia-uno, .tipo-noticia-dos, .tipo-noticia-tres, .tipo-noticia-cuatro, .tipo-noticia-cinco {
+    font-size: 16px; }
+  .noticia-individual h3 {
+    font-size: 20px; }
+  .noticia-individual p {
+    font-size: 18px; }
+  /***** CSS PARA PÁGINA DE CURSOS RESPONSIVE *****/
+  .grilla-cursos {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "curso1" "curso2" "curso3" "curso4" "curso5" "curso6" "curso7" "curso8"; }
+  .curso-flex h2 {
+    font-size: 18px; }
+  .curso-flex h3 {
+    font-size: 16px; }
+  .curso-flex iframe {
+    height: auto; }
+  /***** CSS PARA PÁGINA DE NOSOTROS RESPONSIVE *****/
+  .pagina-titulo {
+    font-size: 17px; }
+  .nosotros-individual h2 {
+    text-align: left; } }
 
 /* ==================== */
+#menu a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white; }
 
-#menu a{
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-}
+#menu button {
+  font-size: 18px;
+  font-weight: 600; }
 
-#menu button{
-    font-size: 18px;
-    font-weight:600
-}
+#menu button:hover {
+  background-color: #d6821e; }
 
-#menu button:hover{
-    background-color: rgb(214, 130, 30);
-}
+#menu li a:hover {
+  color: #d6821e; }
 
-#menu li a:hover{
-    color: rgb(214, 130, 30)
-}
+#politicas {
+  color: white;
+  min-height: 100px; }
 
-#politicas{
-    color: white;
-    min-height: 100px;
-}
+footer {
+  background-color: black; }
 
-footer{
-    background-color: rgb(0, 0, 0);
-}
+#iconos {
+  font-size: 40px;
+  align-self: center; }
 
-#iconos{
-    font-size: 40px;
-    align-self: center;
-}
+.bi-facebook {
+  color: #3b5998; }
 
-.bi-facebook{
-    color: rgb(59, 89, 152);
-}
+.bi-instagram {
+  color: #833AB4; }
 
-.bi-instagram{
-    color: #833AB4;
-}
+.bi-youtube {
+  color: #c5302b; }
 
-.bi-youtube{
-    color: rgb(197, 48, 43);
-}
+.bi-youtube:hover {
+  color: red; }
 
-.bi-youtube:hover{
-    color: rgb(255, 0, 0);
-}
+.bi-instagram:hover {
+  color: #dddddd; }
 
-.bi-instagram:hover{
-    color: rgb(221, 221, 221);
-}
+.bi-facebook:hover {
+  color: #0b21ee; }
 
-.bi-facebook:hover{
-    color: rgb(11, 33, 238);
-}
+iframe {
+  width: 80%;
+  padding-bottom: 35px; }
 
-iframe{
-    width: 80%;
-    padding-bottom: 35px;
-}
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: rgba(214, 132, 31, 0.835); }
 
-.accordion-button:not(.collapsed){
-    color: rgb(0, 0, 0);
-    background-color: rgba(214, 131, 30, 0.836);
-}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.603);
+  border-color: black; }
 
-.accordion-button:focus{
-    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.603);
-    border-color: rgb(0, 0, 0);
-}
+.accordion-body ul {
+  list-style-type: none; }
 
-.accordion-body ul{
-    list-style-type: none;
-}
+.accordion-body a {
+  text-decoration: none;
+  color: #212529; }
 
-.accordion-body a{
-    text-decoration: none;
-    color: rgb(33, 37, 41);
-}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23343a40'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }

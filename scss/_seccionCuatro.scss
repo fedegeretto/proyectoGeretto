@@ -1,0 +1,158 @@
+/********* CSS SECCION CUATRO *********/
+
+.seccion-cuatro{
+    background-color: $secondColor;
+    color: rgb(0, 0, 0);
+    padding: 45px;
+    background: $secondColor;
+    background: radial-gradient(circle, $secondColor 75%, $mainColor 92%);
+
+    .grilla-noticias{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 1000px 1000px 100px;
+        grid-template-areas: "titulo titulo titulo"
+                             "noticia1 noticia2 noticia3"
+                             "noticia4 noticia5 noticia6"
+                             ". boton .";
+        column-gap: 10px;
+        row-gap: 10px;
+
+        h2{
+            grid-area: titulo;
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            padding-bottom: 20px;
+            text-align: center;
+            align-self: center;
+        }
+
+        .noticia-flex{
+            background-color: rgb(255, 255, 255);
+            border: 2px rgb(0, 0, 0) solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .noticia-imagen{
+                width: 100%;
+            }
+
+            .noticia-titulo{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 25px;
+                font-weight: 800;
+                padding: 10px;
+            }
+
+            .noticia-parrafo{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.5;
+                padding: 10px;
+            }
+
+            .noticia-boton{
+                font-size: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 10px;
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                border: none;
+                width: 100%;  
+            }
+        }
+
+        .boton-tn{
+            background-color: $mainColor;
+            border: 2px solid rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            grid-area: boton;
+            padding: 10px;
+            align-self: center;
+        }
+    }
+}
+
+
+// .seccion-cuatro{
+//     background-color: $secondColor;
+//     color: rgb(0, 0, 0);
+//     padding: 45px;
+//     background: $secondColor;
+//     background: radial-gradient(circle, $secondColor 75%, $mainColor 92%);
+// }
+
+// .grilla-noticias{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 100px 1000px 1000px 100px;
+//     grid-template-areas: "titulo titulo titulo"
+//                          "noticia1 noticia2 noticia3"
+//                          "noticia4 noticia5 noticia6"
+//                          ". boton .";
+//     column-gap: 10px;
+//     row-gap: 10px;
+// }
+
+// .grilla-noticias h2{
+//     grid-area: titulo;
+//     font-family: 'Roboto', sans-serif;
+//     font-size: 50px;
+//     font-weight: 900;
+//     padding-bottom: 20px;
+//     text-align: center;
+//     align-self: center;
+// }
+
+// .noticia-flex{
+//     background-color: rgb(255, 255, 255);
+//     border: 2px rgb(0, 0, 0) solid;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+// }
+
+// .noticia-imagen{
+//     width: 100%;
+// }
+
+// .noticia-titulo{
+//     font-family: Verdana, Geneva, Tahoma, sans-serif;
+//     font-size: 25px;
+//     font-weight: 800;
+//     padding: 10px;
+// }
+
+// .noticia-parrafo{
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 18px;
+//     font-weight: 400;
+//     line-height: 1.5;
+//     padding: 10px;
+// }
+
+// .noticia-boton{
+//     font-size: 15px;
+//     font-family: Verdana, Geneva, Tahoma, sans-serif;
+//     padding: 10px;
+//     background-color: rgb(0, 0, 0);
+//     color: rgb(255, 255, 255);
+//     border: none;
+//     width: 100%;  
+// }
+
+// .boton-tn{
+//     background-color: $mainColor;
+//     border: 2px solid rgb(0, 0, 0);
+//     color: rgb(255, 255, 255);
+//     font-size: 20px;
+//     font-family: Verdana, Geneva, Tahoma, sans-serif;
+//     grid-area: boton;
+//     padding: 10px;
+//     align-self: center;
+// }

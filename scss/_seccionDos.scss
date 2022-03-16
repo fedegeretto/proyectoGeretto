@@ -1,0 +1,33 @@
+/********* CSS SECCION DOS *********/
+
+.seccion-dos{
+    /* background-color: rgb(233, 233, 233); */
+    background: rgb(233,233,233);
+    background: radial-gradient(circle, rgba(233,233,233,1) 75%, $mainColor 92%);
+    padding: 45px;
+    color: rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+.seccion-subtitulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.seccion-dos-imagenes img{
+    width: 200px;
+}
+
+.seccion-dos-imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seccion-dos-imagenes img:hover{
+    transform: scale(1.5, 1.5);
+    transition: 2s;
+}

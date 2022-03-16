@@ -1,0 +1,30 @@
+/********* CSS SECCION UNO *********/
+
+.seccion-uno{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 70px;
+}
+
+.ilus{
+    width: 400px;
+}
+
+.seccion-uno-texto{
+    text-align: left;
+}
+
+.seccion-uno-texto h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+.seccion-uno-texto p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+}
