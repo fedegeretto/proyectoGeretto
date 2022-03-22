@@ -1,5 +1,11 @@
 /********* CSS SECCION UNO *********/
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .seccion-uno{
     display: flex;
     flex-direction: row;

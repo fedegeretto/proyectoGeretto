@@ -1,8 +1,13 @@
 /********* CSS SECCION TRES *********/
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .seccion-tres{
-    background-color: rgb(14, 14, 14);
-    color: rgb(255, 255, 255);
+    @include designContainer (rgb(14, 14, 14), rgb(255, 255, 255));
     padding: 45px;
 
     .contenedor-juegos{

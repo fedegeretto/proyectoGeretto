@@ -1,0 +1,4 @@
+@mixin designContainer ($bgcolor, $color){
+    background-color: $bgcolor;
+    color: $color;
+}

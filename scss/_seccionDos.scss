@@ -1,11 +1,15 @@
 /********* CSS SECCION DOS *********/
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .seccion-dos{
-    /* background-color: rgb(233, 233, 233); */
-    background: rgb(233,233,233);
+    @include designContainer (rgb(233, 233, 233), rgb(0, 0, 0));
     background: radial-gradient(circle, rgba(233,233,233,1) 75%, $mainColor 92%);
     padding: 45px;
-    color: rgb(0, 0, 0);
     border-top: 2px solid rgb(0, 0, 0);
 }
 
