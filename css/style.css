@@ -473,14 +473,15 @@
     flex-direction: column;
     align-items: center; }
   /********* CSS SECCION TRES *********/
-  .juegos {
+  .seccion-tres .contenedor-juegos .juegos {
+    display: flex;
     flex-direction: column; }
   .imagen-juego {
     width: 100%; }
   .texto-juego p {
     font-size: 18px; }
   /********* CSS SECCION CUATRO *********/
-  .grilla-noticias {
+  .seccion-cuatro .grilla-noticias {
     grid-template-columns: 100%;
     grid-template-rows: 100px repeat(6, 1fr) 100px;
     grid-template-areas: "titulo" "noticia1" "noticia2" "noticia3" "noticia4" "noticia5" "noticia6" "boton"; }

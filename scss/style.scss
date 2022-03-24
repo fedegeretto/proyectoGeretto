@@ -339,7 +339,8 @@
 
     /********* CSS SECCION TRES *********/
 
-    .juegos{
+    .seccion-tres .contenedor-juegos .juegos{
+        display: flex;
         flex-direction: column;
     }
 
@@ -353,7 +354,7 @@
 
     /********* CSS SECCION CUATRO *********/
 
-    .grilla-noticias{
+    .seccion-cuatro .grilla-noticias{
         grid-template-columns: 100%;
         grid-template-rows: 100px repeat(6, 1fr) 100px;
         grid-template-areas: "titulo"
