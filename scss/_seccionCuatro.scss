@@ -14,7 +14,7 @@
     .grilla-noticias{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px 1000px 1000px 100px;
+        grid-template-rows: auto;
         grid-template-areas: "titulo titulo titulo"
                              "noticia1 noticia2 noticia3"
                              "noticia4 noticia5 noticia6"
@@ -72,14 +72,20 @@
         .boton-tn{
             background-color: $mainColor;
             border: 2px solid rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
             font-size: 20px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             grid-area: boton;
             padding: 10px;
             align-self: center;
+
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
         }
     }
+
+
 }
 
 

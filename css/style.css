@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-/********* CSS HEADER *********/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/********* CSS HEADER *********/
 .header {
   background-color: black;
   position: sticky;
@@ -146,7 +146,7 @@
   .seccion-cuatro .grilla-noticias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1000px 1000px 100px;
+    grid-template-rows: auto;
     grid-template-areas: "titulo titulo titulo" "noticia1 noticia2 noticia3" "noticia4 noticia5 noticia6" ". boton .";
     column-gap: 10px;
     row-gap: 10px; }
@@ -188,19 +188,16 @@
     .seccion-cuatro .grilla-noticias .boton-tn {
       background-color: #d6821e;
       border: 2px solid black;
-      color: white;
       font-size: 20px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       grid-area: boton;
       padding: 10px;
       align-self: center; }
+      .seccion-cuatro .grilla-noticias .boton-tn a {
+        text-decoration: none;
+        color: white; }
 
 /********* CSS FOOTER *********/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 .footer {
   display: flex;
   flex-direction: column; }
@@ -249,7 +246,7 @@
   display: grid;
   justify-content: center;
   grid-template-columns: 40% 40%;
-  grid-template-rows: 100px, repeat(2, 300px) 100px, repeat(2, 300px) 100px, repeat(3, 300px) 100px, repeat(3, 300px);
+  grid-template-rows: auto;
   grid-template-areas: "titulo1 titulo1" "noticia1 noticia1" "noticia2 noticia3" "titulo2 titulo2" "noticia4 noticia4" "noticia5 noticia6" "titulo3 titulo4" "noticia7 noticia10" "noticia8 noticia11" "noticia9 noticia12" "titulo5 titulo5" "noticia13 noticia14" "noticia15 noticia16";
   column-gap: 15px;
   row-gap: 15px; }
@@ -483,7 +480,7 @@
   /********* CSS SECCION CUATRO *********/
   .seccion-cuatro .grilla-noticias {
     grid-template-columns: 100%;
-    grid-template-rows: 100px repeat(6, 1fr) 100px;
+    grid-template-rows: auto;
     grid-template-areas: "titulo" "noticia1" "noticia2" "noticia3" "noticia4" "noticia5" "noticia6" "boton"; }
   .noticia-flex {
     border: none; }
@@ -499,7 +496,8 @@
     width: 100%;
     height: 350px;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding: 0 1rem; }
   .footer-texto {
     font-size: 15px; }
   /***** CSS PARA PÁGINA DE NOTICIAS RESPONSIVE *****/
@@ -596,3 +594,18 @@ iframe {
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23343a40'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .ilus {
+    width: 200px; }
+  .seccion-uno-texto h1 {
+    font-size: 45px; }
+  .seccion-uno-texto p {
+    font-size: 20px; }
+  .seccion-tres .contenedor-juegos .juegos {
+    display: flex;
+    flex-direction: column; }
+  .seccion-cuatro .grilla-noticias {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo titulo" "noticia1 noticia2" "noticia3 noticia4" "noticia5 noticia6" "boton boton"; } }
